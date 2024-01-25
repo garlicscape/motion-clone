@@ -141,3 +141,8 @@ body {
   border-radius: 0.5rem;
   box-shadow: 2px 2px 20px var(--shadow-color);
 }
+
+.dialog__body_input {
+  display: flex;
+  justify-content: center;
+}

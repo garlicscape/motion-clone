@@ -24,6 +24,7 @@ export class InputDialog
     closeBtn.onclick = () => {
       this.closeListener && this.closeListener();
     };
+
     const submitBtn = this.element.querySelector(
       '.dialog__submit'
     )! as HTMLElement;
