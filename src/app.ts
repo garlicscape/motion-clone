@@ -49,6 +49,19 @@ class App {
       TextSecionInput,
       (input: TextSecionInput) => new TodoComponent(input.title, input.body)
     );
+
+    this.page.addChild(
+      new ImageComponent('Image Title', 'https://picsum.photos/200')
+    );
+    this.page.addChild(
+      new VideoComponent('Video Ttile', 'https://youtu.be/6HVYX8FRSGA')
+    );
+    this.page.addChild(
+      new ImageComponent('Image Title', 'https://picsum.photos/200')
+    );
+    this.page.addChild(new TodoComponent('Todo', 'have to do'));
+    this.page.addChild(new NoteComponent('Note1', 'this is note content'));
+    this.page.addChild(new NoteComponent('Note!', 'do you'));
   }
   private bindElementToDialog<T extends (MediaData | TextData) & Component>(
     selector: string,
